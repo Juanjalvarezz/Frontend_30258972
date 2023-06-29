@@ -1,0 +1,1039 @@
+/* Importamos distintas fuentes que usaremos*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Nunito&family=Righteous&display=swap');
+
+
+/*Aqui le aplicamos selectores de tipo a distintas propiedades especificas del documento*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url("../dist/img/fondo.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+    width: 100%;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-bottom: -20px;
+  padding-top: 10px;
+}
+
+footer {
+  background-color: dodgerblue;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  border-radius: 10px;
+
+}
+
+footer p {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+table {
+  width: 700px;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+thead {
+  font-weight: bold;
+  background-color: rgb(30, 143, 255);
+  border-radius: 10px;
+}
+
+tbody {
+  font-weight: bold;
+  background-color: rgba(142, 142, 142, 0.314);
+}
+
+th {
+  text-align: left;
+  padding-left: 15px;
+}
+
+small {
+  padding-left: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  margin-top: 5px;
+  margin-left: 30px;
+  margin-bottom: -20px;
+  padding-top: 10px;
+}
+
+
+ /*Aqui creamos todo el estilo de la barra de navegacion de la pagina, a traves de selectores de clase*/
+
+ header {
+  font-family: Verdana;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: dodgerblue;
+  margin-bottom: 20px;
+  
+ }
+
+ nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .logo {
+  width: 100px;
+  margin-left: 20px;
+ }
+
+ .bar-btn {
+  font-size: 25px;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background-color: rgb(0, 0, 0, .95);
+  text-align: center;
+  transition: all 0.5s;
+  z-index: 100;
+  margin-left: -10px;
+}
+
+.nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all .5s;
+}
+
+.nav-menu li a {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .nav-menu{
+  height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+  display: block;
+}
+
+  /*Aqui creamos distintos selectores de clase para darle cierto estilo especifico a elementos de convenencia*/
+
+  .box {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+  }
+
+  .box:hover {
+    background-color: rgba(255, 255, 255, 0.711);
+    transition: 1s;
+    font-size: 20px;
+
+  }
+
+  .box2 {
+    display: grid;
+    justify-content: center;
+    grid-gap: 60px;
+    background-color:dodgerblue ;
+    padding: 30px;
+    margin-bottom: 10px;
+    width:fit-content;
+    border-radius: 10px;
+    
+  }
+
+  .contenedor {
+    display: flex;
+    padding: 15px;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    margin: 10px, 20px, 30px, 20px;
+    margin-bottom: 20px;
+  }
+
+  .contenedor2 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    margin: 10px, 20px, 30px, 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 60px;
+  }
+
+  .text {
+    padding-left: 35px;
+    padding-right: 25px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+  .text2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+  }
+
+.audios {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.fot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  margin-top: 20px;
+}
+ 
+.mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gala {
+  margin-top: 20px;
+}
+
+.list {
+  margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.pad {
+  padding-left: 65px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  grid-gap: 60px;
+}
+
+.grid2 {
+  display: flex;
+  justify-content: center;
+  grid-gap: 60px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top:5px;
+}
+
+.top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1:hover span:nth-child(1){
+  margin-right: 15px;
+  transition: 0.5s;
+}
+
+/*Aqui creamos todo el estilo para ventana del formulario*/
+
+form{
+	width:600px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:rgba(142, 142, 142, 0.577);
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  padding-right: 15px;
+  margin-top: 40px;
+}
+
+.box2 {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:380px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid dodgerblue;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color: dodgerblue;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+.btn-a {
+  background-color: dodgerblue;
+}
+
+/*--------------------------CARRUSEL--------------------------------*/
+
+.slider {
+  position: relative;
+  width: 1320px;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("../dist/img/a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.slider .imgBox {
+  position: absolute;
+  top: 0;
+  left: 20;
+  width: 100%;
+  height: 100%;
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transition-delay: 0s;
+  z-index: 1;
+  clip-path: circle(0px at bottom); 
+}
+
+.slider input[type="radio"]:checked +.imgBox {
+  z-index: 10;
+  clip-path: circle(1200px at bottom); 
+  transition-delay: 0.8s;
+}
+
+.slider .imgBox img {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  filter: brightness(75%);
+}
+
+.slider .imgBox .contenido {
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+}
+
+.slider .imgBox .contenido h1 {
+  font-size: 6em;
+  line-height: 1em;
+  color: #fff;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+
+
+.slider .imgBox .contenido a:hover {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.slider input[type="radio"] {
+  position: relative;
+  z-index: 90;
+  margin: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: #fff;
+  width: 1.90em;
+  height: 1.90em;
+  border: 0.15em solid dodgerblue;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.slider input[type="radio"]:hover {
+  background-color: dodgerblue;
+  width: 2em;
+  transition: 0.5s;
+}
+
+.slider input[type="radio"]::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em dodgerblue;
+}
+
+.slider input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+/*---------------------------Parallax---------------------------------*/
+
+.parallax-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../dist/img/1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../dist/img/2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax-3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../dist/img/3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*-----------------------Animaciones---------------------------*/
+
+
+li a::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+li a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  border-radius: 10px;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgb(0, 119, 255);
+  z-index: -1;
+  transition: transform .5s ease;
+}
+
+.div {
+  transition: 1s box-shadow;
+}
+
+.div:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+.div:hover::before, div:hover::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  border-radius: 75px;
+  background: #00e4fe;
+  border-radius: px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+.div:hover:after {
+  background: #006aff;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;    
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;    
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;    
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 550px) {
+  footer {
+    background-color: dodgerblue;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 390px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: -20px;
+    padding-top: 10px;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: -20px;
+    padding-top: 10px;
+  }
+
+  .box {
+    background-color: white;
+    width: 360px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+  }
+
+  .box2 {
+    background-color: white;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .contenedor {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .contenedor2 {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 60px;
+    width: 200px;
+  }
+
+  .contenedor2 img {
+    width: 200px;
+  }
+  .contenedor img {
+    width: 250px;
+  }
+  
+  .text {
+    padding-left: 15px;
+    padding-right: 25px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+  }
+
+  .text3 {
+    padding-left: 20px;
+    padding-right: 25px;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+  }
+
+  .resp {
+    align-items: center;
+  }
+
+  .resp img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mapa {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .mapa .text {
+    font-size: 20px;
+  }
+
+  .btn-a {
+    background-color: dodgerblue;
+    height: 50px;
+  }
+
+audio {
+  width: 300px;
+}
+
+.inter {
+  line-height: 10px;
+}
+
+.list {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    width: 300px;
+}
+
+th{
+  font-size: 15px;
+}
+
+.fot {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fot img {
+  width: 100px;
+}
+
+small {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+video {
+  width: 300px;
+}
+
+ol {
+  display: contents;
+  align-items: center;
+  justify-items: center;
+}
+
+cite {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+form{
+	width: 360px;
+  height: 680px;
+	padding:16px;
+	border-radius: 10px;
+	margin:auto;
+	background-color:rgba(142, 142, 142, 0.577);
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+form label{
+	width: 40px;
+	font-weight:bold;
+  font-size: 20px;
+	display:inline-block;
+  padding-left: 15px;
+}
+
+form input {
+  font-size: 15px;
+}
+
+.grid2 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 330px;
+  margin: 10px;
+  margin-left: 35px;
+}
+
+.nav-menu li a {
+  font-size: 22px;
+  line-height: 50px;
+  text-decoration: none;
+  height: 100px;
+}
+
+header {
+  font-family: Verdana;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  width: 360px;
+  background-color: dodgerblue;
+  margin-bottom: 10px;
+  margin-left: 15px;
+ }
+
+ nav {
+  height: 150px;
+  width: 300px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+/*-------------- CARRUSEL ----------------*/
+
+.abrir-menu,
+    .cerrar-menu {
+        display: flex;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #000000;
+        visibility: visible;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #444444;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+    .slider .imgBox .contenido {
+        max-width: 350px;
+    }
+
+    .slider .imgBox .contenido  h1 {
+        font-size: 60px;
+    }
+
+    .slider .imgBox .contenido p {
+        font-size: 10px;
+        color: #fff;
+        line-height: 1.5;
+    }
+
+    .slider {
+        position: relative;
+        width: 360px;
+        max-height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-image: url("../dist/img/zizu.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .slider .imgBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0s;
+    z-index: 1;
+    clip-path: circle(0px at bottom); 
+}
+.slider input[type="radio"]:checked +.imgBox {
+    z-index: 10;
+    clip-path: circle(1200px at bottom); 
+    transition-delay: 0.8s;
+}
+
+.contenido h1 {
+  letter-spacing: 15px;
+  font-style: oblique;
+}
+
+.slider .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+/*--------------------------Parallax--------------------------*/
+
+.parallax-1 {
+  width: 399px;
+  height: 100%;
+  background-image: url("../dist/img/1.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax-2 {
+  width: 399px;
+  height: 100%;
+  background-image: url("../dist/img/2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.parallax-3 {
+  width: 399px;
+  height: 100%;
+  background-image: url("../dist/img/3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+}
+
+
+/*----------Media query para el menu hamburguesa----------------*/
+
+@media screen and (min-width: 700px) {
+
+  
+  nav {
+    height: 100px;
+  }
+
+  nav img {
+    width: 300px;
+  }
+  
+  .bar-btn {
+    display: none;
+  }
+
+  .nav-menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+  }
+  
+  
+}
