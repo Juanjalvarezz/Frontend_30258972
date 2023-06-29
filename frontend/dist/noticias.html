@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/seriealogo.png" type="png" size=20px>
+    <title>Ultimas Noticias</title>
+</head>
+<body>
+   <!-- Aquí creamos nuestra barra de navegación con las distintas pestañas (enlaces) de nuestra pagina -->
+   <header>
+    <nav>
+        <div class="">
+            <img class="logo" src="img/seriealogo.png">
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="bar-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-menu scroll">
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="galardonados.html">Galardonados</a></li>
+            <li><a href="datos.html">Datos</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="opinion.html">Opinion</a></li>
+        </ul>
+
+    </div>
+</nav>
+</header>
+
+<section class="parallax-1">
+  <!-- Aquí creamos una box con un pequeño texto y una imagen, todo dentro de una box-->
+    <section class="box">
+      <h1><span>ULTIMAS </span> NOTICIAS</h1>
+      <div class="contenedor">
+        <img src="./img/noti.jpg" width="500px">
+        <p class="text">Todas las noticias sobre Serie A publicadas. Información, novedades y última hora sobre Serie A.</p>
+
+      </div>
+    </section>
+
+
+     
+    <!-- Aquí definimos un <video> y le agregamos una <source> con nuestro video -->
+     <div class="box">
+      <cite class="mapa top"><b>ENLOQUECIDO </b> Mourinho pierde la cabeza tras perder la Europa League</cite>
+      <div class="fot top">
+      <section class="grid">
+        <video controls>
+          <source src="video/Roma.mp4" type="video/mp4">
+        </video>
+      </section>
+    </div>
+    </div>
+</section>
+
+
+
+<!-- Aquí creamos un seccion de noticias con una imagen y escribimos una cita pequeña con <cite> en ellas -->
+<section class="parallax-2">
+  <div class="box">
+  <section class="contenedor grid">
+    <div>
+    <img src="img/ibra.jpg" width="350"><br>
+    <cite><b>TRISTISIMO</b> Ibra dejará al milan al final de esta<br> campaña</cite>
+    </div>
+  
+
+    <div class="">
+    <img src="img/roma-aeuropa.jpeg" width="415"><br>
+    <cite><b>LAMENTABLE</b> La Roma cae por la via penal en la<br> final de la Europa League</cite>
+    </div>
+  </section>
+</div>
+
+      
+      <div class="box">
+      <section class="contenedor grid">
+        <div>
+        <img src="img/napoli-campeon.jpeg" width="400px"><br>
+        <cite><b>ULTIMA HORA</b> El Napoli vuelve a ser campeon<br> de la Serie A</cite>
+        </div>
+
+        <div>
+        <img src="img/samp.jpeg" width="350px"><br>
+        <cite><b>OFICIAL</b> la Sampdoria desciende a la serie B</cite>
+        </div>
+      </section>
+
+    </div>
+
+
+  
+      <!-- Aquí definimos un <footer> que es un pie de pagina con los datos del autor -->
+      <br>
+      <footer><p>Juan Alvarez 30.258.972 Universidad Valle del Momboy</p></footer>
+</section>
+<script src="main.js"></script>
+</body>
+</html>

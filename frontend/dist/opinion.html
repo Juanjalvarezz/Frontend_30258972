@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/2cb25f2c39.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/seriealogo.png" type="png" size=20px>
+    <title>Opinion</title>
+  </head>
+  <body>
+
+  <!-- Aquí creamos nuestra barra de navegación con las distintas pestañas (enlaces) de nuestra pagina -->
+  <header>
+    <nav>
+        <div class="">
+            <img class="logo" src="img/seriealogo.png">
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="bar-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-menu">
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="galardonados.html">Galardonados</a></li>
+            <li><a href="datos.html">Datos</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="opinion.html">Opinion</a></li>
+        </ul>
+
+    </div>
+</nav>
+</header>
+
+
+<!-- Aquí creamos una pequeña form con un formulario feedback para que el usuario de su opinion de la pagina -->
+  <section class="box">
+    <h2><span>Tienes alguna opinion?</span> Dejanosla saber aqui!</h2>
+  </section>
+    
+      <form id="postUsuario">
+        
+        <div class="box2">
+        <label for="NombrePost">Nombre</label>
+        <input type="text" name="NombrePost" id="nombre"  placeholder="Escribe tu nombre" />
+        </div>
+
+        <div class="box2">
+        <label for="ApellidoPost">Apellido</label>
+        <input type="text" name="ApellidoPost" id="apellido"  placeholder="Escribe tu apellido" />
+        </div>
+
+        <div class="box2">
+        <label for="EmailPost">Email</label>
+        <input type="text" name="EmailPost" id="email"  placeholder="Escribe tu email" />
+        </div>
+
+        <div class="box2">
+        <label for="AsuntoPost">Asunto</label>
+        <input type="text" name="AsuntoPost" id="asunto"  placeholder="Escribe tu asunto" />
+        </div>
+
+        <div class="box2">
+        <label for="MensajePost">Mensaje</label>
+        <input type="text" name="MensajePost" id="mensaje"  placeholder="Escribe tu mensaje"/>
+       </div>
+
+        <input class="text" type="submit" value="Enviar" />
+      </form>
+      <p class="text grid2" id="textoPost">Info Usuario</p>
+    </div>
+
+      <!-- Aquí definimos un <footer> que es un pie de pagina con los datos del autor -->
+      <footer><p>Juan Alvarez 30.258.972 Universidad Valle del Momboy</p></footer>
+
+      <script src="main.js"></script>
+      <script src="opinion.js"></script>
+  </body>
+</html>
