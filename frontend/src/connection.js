@@ -1,0 +1,1 @@
+import { formPost } from "./bd";
